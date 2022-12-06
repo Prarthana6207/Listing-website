@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+
+}
+.openBtn {
+  display: flex;
+  justify-content: left;
+}
+.openButton {
+  border: none;
+  border-radius: 5px;
+  background-color: #1c87c9;
+  color: white;
+  padding: 14px 20px;
+  cursor: pointer;
+  position: fixed;
+}
+.loginPopup {
+  position: relative;
+  text-align: center;
+  width: 100%;
+ 
+}
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 45%;
+  top: 20%;
+  transform: translate(-30%, 5%);
+  
+  z-index: 9;
+
+  
+}
+.formContainer {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 3px solid gray;
+ }
+.formContainer input[type=text],
+.formContainer input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 20px 0;
+  border: none;
+  background: #eee;
+}
+.formContainer input[type=text]:focus,
+.formContainer input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.formContainer .btn {
+  padding: 10px 42px;
+  border: none;
+  background-color:rgb(26, 129, 231);
+  color: white;
+  cursor: pointer;
+ margin-bottom: 15px;
+  
+  opacity: 0.8;
+}
+.formContainer .cancel {
+  background-color: #eb1d1d;
+}
+.formContainer .btn:hover,
+.openButton:hover {
+  opacity: 1;
+}

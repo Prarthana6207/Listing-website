@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mini.css">
+    <link rel="stylesheet" href="utensil.css">
+    <link rel="stylesheet" href="sign.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="container">
+        <nav class="flex space-between">
+        <div class="left flex item-centre uppercase semibold ">
+            <img src="/img/prryy.jpeg"/>
+                <ul class="flex item-centre justify-centre">
+                    <li>Free-structure</li>
+                    <li>services</li>
+                    <li>Resources</li>
+                    <li>FAQs</li>
+                    <li>shopsy</li>
+                </ul>
+        </div>
+        <div class="right flex item-centre uppercase semibold ">
+            
+            <div class="profile mx-2">
+              <a href="/register/text.html"><button class="button button1 " type="button">Start Selling </button>  </a>
+            </div>
+            
+            <div class="bag mx-2">
+                <button class="button button2 " onclick="openForm()" type="button">Login </button>
+            </div>
+        </div>
+    </nav>
+    <div class="loginPopup">
+        <div class="formPopup" id="popupForm">
+          <form action="http://localhost/action_page.php" method="post" class="formContainer">
+            <h2>Please Log in</h2>
+            <label for="contact">
+              <strong>Enter your 10 digit numbere</strong>
+            </label>
+            <input type="text" id="contact" placeholder="Enter register number" name="contact" required>
+            <label for="psw">
+              <strong>Password</strong>
+            </label>
+            <input type="password" id="psw" placeholder="Your Password" name="psw" required>
+            <button type="submit" class="btn">Log in</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+          </form>
+        </div>
+      </div>
+    </header>
+<div class= "part1">
+    <img src="https://img1a.flixcart.com/fk-sp-static/images/Welcome_potal_banner_Desktop_v2_july_2022.svg"/>
+    <div class="details">
+        <h1 class="heading1">
+
+            Launch your Businessin in <br>10 minutes
+        </h1>
+        <div class="enter">
+            <input placeholder="Enter 10 digit phone number" name="Registrationnmber" type="text ">
+        </div>
+        <div class="selling">
+           <a href="/register/text.html"> <button class="button button1 semibold" type="button">Start Selling    </button></a>
+        </div>
+    </div>
+</div>
+<div class="part2">
+    <div class="img1">
+        <img src="https://img1a.flixcart.com/fk-sp-static/images/Chaitanya_Ramalingegowda__DirectorCo-founder_Wakefit.png" class="photo">
+        <div class="text">
+            <p>"BBD and BDS sales compounded the consumer demand which led to a milestone of 150% YoY revenue growth from ShopFast."</p>
+            <h4>Chaitanya Ramalingegowda, Wakefit.co</h4>
+        </div>
+    </div>
+    <div class="img1">
+        <img src="https://img1a.flixcart.com/fk-sp-static/images/Raju.png" class="photo">
+        <div class="text">
+            <p>"Starting with 1, ShopFast helped me expand to 6 categories with 5x growth year on year!"</p>
+            <h4>Raju Lunawath, Amazestore</h4>
+        </div>
+    </div>
+    <div class="img1">
+        <img src="https://img1a.flixcart.com/fk-sp-static/images/Shubhash_Chopra.png" class="photo">
+        <div class="text">
+            <p>"With ShopFast, we went from Rs.20,000 to Rs.2 Cr in sales per annum!"</p>
+            <h4>Shubhash Chopra, DivisaStore</h4>
+        </div>
+    </div>
+</div>
+<footer class="foot">
+    <div class="logo">
+        
+   
+        <p>©2022 ShopFast &nbsp;&nbsp; All rights reserved</p>
+    </div>
+    <div class="policy">
+        <a href="https://seller.flipkart.com/sell-online/privacy-policy">Privacy Policy</a>
+        <a href="https://seller.flipkart.com/sell-online/terms-use"> Terms of Usage</a>
+    </div>
+    <div class="social">
+        <a href="https://www.youtube.com/channel/UCWB4NQ72fPEBt5DCzWJ95qw?view_as=subscriber" >
+        <img src="https://cdn.pixabay.com/photo/2016/04/24/14/34/youtube-1349699_1280.png"></a>
+        <a href="https://twitter.com/FlipkartSellers">
+            <img src="https://www.pngkey.com/png/detail/2-27646_twitter-logo-png-transparent-background-logo-twitter-png.png">
+        </a>
+        <a href="https://1000logos.net/wp-content/uploads/2016/11/fb-logo.jpg">
+            <img src="https://img.freepik.com/premium-photo/facebook-application-logo-3d-rendering-white-background_41204-6939.jpg?w=2000">
+        </a>
+    </div>
+</footer>
+<script>
+    function openForm() {
+      document.getElementById("popupForm").style.display = "block";
+      
+    }
+    function closeForm() {
+      document.getElementById("popupForm").style.display = "none";
+    }
+  </script>
+</body>
+</html>
